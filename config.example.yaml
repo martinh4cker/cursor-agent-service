@@ -1,0 +1,12 @@
+version: 1
+server:
+  listen: 127.0.0.1:43100
+  proxy_listen: 127.0.0.1:43101
+  data_dir: ./data
+models:
+  - id: example-model
+    name: Example model
+    protocol: openai-chat
+    base_url: https://provider.example/v1
+    model: provider-model-id
+    api_key_env: CURSOR_PROVIDER_API_KEY
